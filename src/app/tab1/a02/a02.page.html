@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1" text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>a02</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-segment value="data">
+      <ion-segment-button value="data" (click)='click1()'>
+        基本数据类型
+      </ion-segment-button>
+      <ion-segment-button value="array" (click)='click2()'>
+        数组
+      </ion-segment-button>
+      <ion-segment-button value="turple" (click)='click3()'>
+        元组
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <div id='mydiv'></div>
+</ion-content>

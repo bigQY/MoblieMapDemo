@@ -1,5 +1,7 @@
 {
   "name": "lgq-course-demos",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
