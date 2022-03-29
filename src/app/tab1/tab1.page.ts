@@ -14,4 +14,10 @@ export class Tab1Page {
   showPage2() {
     this.nav.navigateForward('/tabs/tab1/a02');
   }
+  showPage3() {
+    this.nav.navigateForward('/tabs/tab1/a03');
+  }
+  showPage4() {
+    this.nav.navigateForward('/tabs/tab1/a04');
+  }
 }
