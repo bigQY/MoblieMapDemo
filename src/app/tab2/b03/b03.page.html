@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回" defaultHerf="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【B03】双向绑定</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="margin: 10px;">
+  <ion-item style="margin: 10px;width: 90vw;">
+    <ion-label position="floating">姓名</ion-label>
+    <ion-input [(ngModel)]='xm' (ngModelChange)='showResult()' placeholder="请输入姓名"></ion-input>
+  </ion-item>
+  <div>
+    <ion-list style="margin: 10px;width: 90vw;">
+      <ion-radio-group checked [(ngModel)]="r" (ngModelChange)='showResult()'>
+        <ion-list-header>
+          <ion-label>你参加的项目是（必须选一项）：</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>唱</ion-label>
+          <ion-radio slot="start" value="唱"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>跳</ion-label>
+          <ion-radio slot="start" value="跳"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>RAP</ion-label>
+          <ion-radio slot="start" value="RAP"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>篮球</ion-label>
+          <ion-radio slot="start" value="篮球"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </div>
+  <br>
+  <br>
+  <div [innerHTML]='result' style="margin: 10px;width: 90vw;"></div>
+</ion-content>

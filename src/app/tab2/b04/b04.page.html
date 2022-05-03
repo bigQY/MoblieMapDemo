@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回" defaultHerf="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【B04】内置指令</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+  <div style="margin: 10px;width: 90vw;">
+    <p style='color:red;'>ngFor基本用法</p>
+    <!-- 显示b04.ts中定义的students数组中的所有元素 -->
+    <p>所有学生：</p>
+    <div *ngFor="let student of students">
+        {{student}}
+        <br>
+    </div>
+
+    <p style='color:red;'>ngIf基本用法</p>
+    <!-- 如果b04.ts中存在age属性，就显示它，否则移除这个div元素 -->
+    <div *ngIf='age'>
+        张三的年龄为：{{age}}
+    </div>
+    <!-- 如果b04.ts中存在grade属性，就显示它，否则移除这个div元素 -->
+    <div *ngIf='grade'>
+         张三的成绩为：{{grade}}
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回" defaultHerf="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【B02】单向绑定</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center;">
+    <!-- 参数div1是引用div中用#前缀声明的变量名 -->
+    <ion-button (click)='start()'>启动定时器</ion-button>
+    <ion-button (click)='stop()'>停止定时器</ion-button>
+    <ion-button (click)='switchDiv()'>切换div的显示和隐藏</ion-button>
+    <hr>
+    <div id='div1' style="text-align: center;">
+        <!-- 【中括号：单向绑定（仅目标绑定到源），此处目标是img元素的【src】特性，源是在TS中定义的【imgSrc】属性】 -->
+        <img [src]='imgSrc' style="width:50px;">
+        <!-- 【单向绑定特例】attr绑定 -->
+        <table border='1'>
+            <tr>
+              <td>第1行第1列</td>
+              <!-- 这个是【单向绑定】的特例，colspanProperty是在TS中声明的属性，在TS中可根据情况控制该属性的值来改变这个colspan特性 -->
+                <td [attr.colspan]='colspanProperty'>第1行第2、3列</td>
+              <td>第1行第4列</td>
+            </tr>
+            <tr>
+                <td>第2行第1列</td>
+                <td>第2行第2列</td>
+                <td>第2行第3列</td>
+                <td>第2行第4列</td>
+            </tr>
+        </table>
+        <!-- 【单向绑定特例】CSS类绑定 -->
+        <p [class]='classProp'>哈哈，看我的颜色和字体大小变化</p>
+    </div>
+</ion-content>
