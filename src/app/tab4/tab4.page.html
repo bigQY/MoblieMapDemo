@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-title>
+      Tab 4
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <div style="margin: 10px;width: 90vw;">
+    <ion-list>
+      <ion-item>
+        <ion-button (click)="showPage1()">D01</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="showPage2()">D02</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="showPage3()">D03</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="showPage4()">D04</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
 
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>

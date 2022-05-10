@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: Tab4Page
+  },
+  {
+    path: 'd04',
+    loadChildren: () => import('./d04/d04.module').then( m => m.D04PageModule)
+  },
+  {
+    path: 'd01',
+    loadChildren: () => import('./d01/d01.module').then( m => m.D01PageModule)
   }
 ];
 
