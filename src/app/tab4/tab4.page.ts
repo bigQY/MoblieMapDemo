@@ -35,5 +35,8 @@ export class Tab4Page {
   showPage8() {
     this.nav.navigateForward('/tabs/tab4/d08');
   }
+  showPage9() {
+    this.nav.navigateForward('/tabs/tab4/d09');
+  }
 }
 
