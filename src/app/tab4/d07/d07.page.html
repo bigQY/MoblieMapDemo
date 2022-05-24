@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【D07】检索与计算</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div  style="position: fixed;z-index: 99999;">
+        <ion-button size="small" (click)='click1()'>查公交线路</ion-button>
+        <ion-button size="small" (click)='click2()'>查景点</ion-button>
+        <ion-button size="small" (click)='click3()'>查餐馆</ion-button>
+        <ion-button size="small" (click)='click4()'>查餐饮</ion-button>
+    </div>
+    <hr>
+    <div [innerHTML]='tip' style='color:red;margin-top: 30px;'></div>
+    <hr>
+    <div id="bdmap" style="height: 100%; width: 100%"></div>
+    <div id="r-result"></div>
+</ion-content>

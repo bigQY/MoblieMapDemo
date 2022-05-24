@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【D03】信息窗口</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div  style="position: fixed;z-index: 99999;">
+        <ion-button size="small" (click)='click1()'>文字</ion-button>
+        <ion-button size="small" (click)='click2()'>图文</ion-button>
+        <ion-button size="small" (click)='click3()'>多点</ion-button>
+        <ion-button size="small" (click)='click4()'>获取窗口信息</ion-button>
+    </div>
+    <hr>
+    <br>
+    <div [innerText]='tip' style="color:red;"></div>
+    <hr>
+    <div id="bdmap" style="height: 100%; width: 100%"></div>
+</ion-content>

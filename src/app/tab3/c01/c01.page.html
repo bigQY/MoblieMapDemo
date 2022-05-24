@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  text="返回" defaultHref="tabs/tab3"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【C01】基本控件</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-button>按钮1</ion-button>
+  <ion-button ion-button round>按钮2</ion-button>
+  <ion-button ion-button>
+    <ion-icon name="home"></ion-icon>
+    按钮3
+    </ion-button>
+    <ion-button ion-button icon-only>
+      <ion-icon name="home"></ion-icon>
+    </ion-button>
+
+    <ion-list style="padding:0;margin:0;">
+      <ion-list-header>
+        请选择你喜欢的体育项目（可多选）:
+      </ion-list-header>
+      <ion-item>
+        <ion-label>篮球</ion-label>
+        <ion-checkbox [(ngModel)]='check1' (ngModelChange)='showResult()'></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>排球</ion-label>
+        <ion-checkbox [(ngModel)]='check2' (ngModelChange)='showResult()'></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-radio-group radio-group [(ngModel)]="r" (ngModelChange)='showResult()'>
+      <ion-list style="padding:0;margin:0;" >
+        <ion-list-header>
+          你参加的项目是（必须选一项）:
+        </ion-list-header>
+        <ion-item>
+          <ion-label>篮球</ion-label>
+          <ion-radio value="篮球"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>排球</ion-label>
+          <ion-radio value="排球"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-radio-group>
+    <ion-list>
+      <ion-item>
+        <ion-label>游戏</ion-label>
+        <ion-select [(ngModel)]="gaming" interface="popover" (ngModelChange)='showResult()'>
+          <ion-select-option value="game1">游戏1</ion-select-option>
+          <ion-select-option value="game2">游戏2</ion-select-option>
+          <ion-select-option value="游戏3">游戏3</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <div style="border:1px;" [innerHTML]='result'></div>
+</ion-content>

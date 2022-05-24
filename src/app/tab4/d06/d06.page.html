@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【D06】定位</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+        <ion-button size="small" (click)='click1()'>浏览器定位</ion-button>
+        <ion-button size="small" (click)='click2()'>ip定位</ion-button>
+        <ion-button size="small" (click)='click3()'>城市名定位</ion-button>
+        <ion-button size="small" (click)='click4()'>经纬度定位</ion-button>
+    </div>
+    <div id="bdmap" style="height: 100%; width: 100%"></div>
+</ion-content>

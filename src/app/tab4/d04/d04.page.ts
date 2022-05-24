@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-d04',
@@ -7,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class D04Page implements OnInit {
 
-  constructor() {
-    var script = document.createElement("script");
-      script.src = "https://api.map.baidu.com/api?v=3.0&ak=da1K4Mxg4LItgEhMy5h8k3ZbXzLzFb2I&callback=initialize";
-      document.body.appendChild(script);
-  }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
   }
@@ -122,5 +119,4 @@ export class D04Page implements OnInit {
       }
     }
   }
-
 }

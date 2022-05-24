@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+      </ion-buttons>
+      <ion-title>【D02】覆盖物</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div  style="position: fixed;z-index: 99999;">
+      <label>添加：</label>
+      <ion-button size="small" (click)='click1()'>折线</ion-button>
+      <ion-button size="small" (click)='click2()'>箭头折线</ion-button>
+      <ion-button size="small" (click)='click3()'>圆</ion-button>
+      <ion-button size="small" (click)='click4()'>多边形</ion-button>
+      <ion-button size="small" (click)='click5()'>矩形</ion-button>
+      <br>
+      <label>删除：</label>
+      <ion-button size="small" (click)='deleteClick()'>清除所有覆盖物</ion-button>
+  </div>
+  <div id="container" style="height: 100%; width: 100%"></div>
+</ion-content>

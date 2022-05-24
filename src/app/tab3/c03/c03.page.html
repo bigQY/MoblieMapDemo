@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab3" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【C03】alert与toast</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding style="text-align: center;">
+    <ion-button (click)='showAlert()'>基本</ion-button>
+    <br>
+    <ion-button ion-button (click)='showConfirm()'>确认</ion-button>
+    <br>
+    <ion-button ion-button (click)='showPrompt()'>输入</ion-button>
+    <br>
+    <ion-button ion-button (click)='showRadio()'>单选</ion-button>
+    <br>
+    <ion-button ion-button (click)='showCheckbox()'>复选</ion-button>
+    <br>
+    <ion-button ion-button (click)='presentToast()'>信息</ion-button>
+    <hr>
+    <div [innerText]='resultMessage'></div>
+</ion-content>

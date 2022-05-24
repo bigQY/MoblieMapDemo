@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>d08</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div>
+        <ion-button size="small" (click)='click1()'>步行</ion-button>
+        <ion-button size="small" (click)='click2()'>骑行</ion-button>
+        <ion-button size="small" (click)='click3()'>驾车</ion-button>
+        <ion-button size="small" (click)='click4()'>距离计算</ion-button>
+    </div>
+    <div id="bdmap" style="height: 100%; width: 100%"></div>
+    <div id="r-result"></div>
+</ion-content>

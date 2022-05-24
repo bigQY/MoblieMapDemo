@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【D05】全景图与地址解析</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div  style="position: fixed;z-index: 99999;">
+        <ion-button size="small" (click)='click1()'>全景图</ion-button>
+        <ion-button size="small" (click)='click2()'>地址解析</ion-button>
+        <ion-button size="small" (click)='click3()'>逆地址解析</ion-button>
+    </div>
+    <div id="bdmap" style="height: 100%; width: 100%"></div>
+</ion-content>

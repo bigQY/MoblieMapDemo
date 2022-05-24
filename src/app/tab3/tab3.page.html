@@ -1,17 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+        <ion-title>Inoic</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+</ion-header>
+<ion-content [fullscreen]="true" padding>
+    <ion-list>
+        <ion-item>
+            <ion-button (click)="showPage1()">c01-按钮、单选、复选</ion-button>
+        </ion-item>
+        <ion-item>
+            <ion-button (click)="showPage2()">c02-下拉框select</ion-button>
+        </ion-item>
+        <ion-item>
+            <ion-button (click)="showPage3()">c03-alert与toast</ion-button>
+        </ion-item>
+        <ion-item>
+            <ion-button (click)="showPage4()">c04-头像、卡片、徽章</ion-button>
+        </ion-item>
+    </ion-list>
 </ion-content>

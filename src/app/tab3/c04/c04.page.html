@@ -1,0 +1,105 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab3" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【C04】头像、卡片、徽章</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-list-header>今天</ion-list-header>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/kitten1.jpg">
+            </ion-avatar>
+            <h3>猫三</h3>
+            <p>这个地方对我们来说不够大。</p>
+            <ion-note item-end>15:43</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/kitten2.jpg">
+            </ion-avatar>
+            <h3>猫四</h3>
+            <p>我的眼大不大？</p>
+            <ion-note item-end>13:12</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/kitten3.jpg">
+            </ion-avatar>
+            <h3>猫五</h3>
+            <p>我是你见过的最可爱的吗？</p>
+            <ion-note item-end>10:03</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/kitten4.jpg">
+            </ion-avatar>
+            <h3>猫六</h3>
+            <p>你没把我变成灰狐狸。</p>
+            <ion-note item-end>5:47</ion-note>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-list-header>昨天</ion-list-header>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/puppy1.jpg">
+            </ion-avatar>
+            <h3>狗三</h3>
+            <p>你听说过功夫吗？准备好吃猪排吧。</p>
+            <ion-note item-end>23:11</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/puppy2.jpg">
+            </ion-avatar>
+            <h3>狗四</h3>
+            <p>我可能不是聪明的狗, 但我知道死是什么。</p>
+            <ion-note item-end>20:54</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/puppy3.jpg">
+            </ion-avatar>
+            <h3>狗五</h3>
+            <p>你害怕吗？老实告诉我。</p>
+            <ion-note item-end>7:22</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imges/puppy4.jpg">
+            </ion-avatar>
+            <h3>狗六</h3>
+            <p>哇呜。</p>
+            <ion-note item-end>2:08</ion-note>
+        </ion-item>
+    </ion-list>
+
+    <!-- card（卡片）与badge（徽章）基本用法 -->
+    <ion-card>
+        <img src="assets/imges/kitten2.jpg" />
+        <ion-card-content>
+            <ion-card-title>猫四</ion-card-title>
+            <p>猫四的眼睛就是大！</p>
+        </ion-card-content>
+
+        <ion-item>
+            <ion-icon name='musical-notes' item-start style="color: #d03e84"></ion-icon>
+            相册
+            <ion-badge item-end>9个</ion-badge>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+            关注
+            <ion-badge item-end>260人次</ion-badge>
+        </ion-item>
+
+    </ion-card>
+</ion-content>

@@ -1,13 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>d01</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab4" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【D01】地图与控件</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <div>
-      <button ion-button small round (click)='click1()'>显示开封地图</button>
-      <button ion-button small round (click)='click2()'>切换[开封/北京]</button>
-  </div>
-  <div id="bdmap" style="height: 100%; width: 100%"></div>
+    <div style="position: fixed;z-index: 99999;">
+        <ion-button round (click)='click1()' Size="small">显示开封地图</ion-button>
+        <ion-button ion-button round (click)='click2()'  Size="small">切换[开封/北京]</ion-button>
+    </div>
+    <div id="bdmap" style="height: 100%; width: 100%"></div>
 </ion-content>

@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab3" text="返回"></ion-back-button>
+        </ion-buttons>
+        <ion-title>【C02】下拉框</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label>性别</ion-label>
+            <ion-select [(ngModel)]="gender" interface="popover">
+                <ion-select-option value="f">女</ion-select-option>
+                <ion-select-option value="m">男</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>游戏</ion-label>
+            <ion-select [(ngModel)]="gaming" interface="popover">
+                <ion-select-option value="nes">NES游戏</ion-select-option>
+                <ion-select-option value="n64">N64游戏</ion-select-option>
+                <ion-select-option value="ps">PS游戏</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>日期</ion-label>
+            <ion-select [(ngModel)]="month" interface="popover">
+                <ion-select-option value="o1">January</ion-select-option>
+                <ion-select-option value="02">February</ion-select-option>
+                <ion-select-option value="03">March</ion-select-option>
+                <ion-select-option value="04">April</ion-select-option>
+                <ion-select-option value="05">May</ion-select-option>
+                <ion-select-option value="06">June</ion-select-option>
+                <ion-select-option value="07">July</ion-select-option>
+                <ion-select-option value="08">August</ion-select-option>
+                <ion-select-option value="09">September</ion-select-option>
+                <ion-select-option value="10">October</ion-select-option>
+                <ion-select-option value="1l">November</ion-select-option>
+                <ion-select-option value="12" checked="true">December</ion-select-option>
+            </ion-select>
+            <ion-select [(ngModel)]="year" interface="popover">
+                <ion-select-option>2018</ion-select-option>
+                <ion-select-option checked="true">2019</ion-select-option>
+                <ion-select-option>2020</ion-select-option>
+                <ion-select-option>2021</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>音乐</ion-label>
+            <ion-select [(ngModel)]="music" [interfaceOptions]="musicAlertOpts">
+                <ion-select-option>音乐1</ion-select-option>
+                <ion-select-option>音乐2</ion-select-option>
+                <ion-select-option (select)="stpSelect()">音乐3</ion-select-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+</ion-content>
